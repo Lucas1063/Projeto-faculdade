@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AnimeHub - Descubra o fascinante mundo dos animes japoneses">
+    <title>AnimeHub - O Mundo dos Animes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1E40AF">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <div class="logo">🎬</div>
+                <span class="brand-name">AnimeHub</span>
+            </div>
+            
+            <nav class="nav">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#animes" class="nav-link">Animes</a>
+                <a href="#noticias" class="nav-link">Notícias</a>
+                <a href="#contato" class="nav-link nav-cta">Contato</a>
+            </nav>
+            
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>⭐ Melhor Plataforma de Anime</span>
+            </div>
+            <h1 class="hero-title">
+                Descubra o<br>
+                <span class="gradient-text">Mundo dos Animes</span>
+            </h1>
+            <p class="hero-subtitle">
+                Explore histórias épicas, personagens inesquecíveis e mundos fantásticos. 
+                Sua jornada no universo anime começa aqui.
+            </p>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label">Animes Disponíveis</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">50k+</div>
+                    <div class="stat-label">Usuários Ativos</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">4.9★</div>
+                    <div class="stat-label">Avaliação</div>
+                </div>
+            </div>
+            
+            <div class="hero-buttons">
+                <a href="#animes" class="btn btn-primary">🎬 Explorar Animes</a>
+                <a href="#noticias" class="btn btn-secondary">⚡ Novidades</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Por que escolher o<br>
+                    <span class="gradient-text">AnimeHub?</span>
+                </h2>
+                <p class="section-subtitle">
+                    Somos mais que uma plataforma - somos uma ponte para mundos extraordinários, 
+                    onde cada história anime ganha vida e cada fã encontra seu lugar especial.
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">❤️</div>
+                    <h3>Paixão pelo Anime</h3>
+                    <p>Dedicamos nossa plataforma aos verdadeiros fãs de anime, oferecendo conteúdo de qualidade e uma experiência única.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Comunidade Ativa</h3>
+                    <p>Faça parte de uma comunidade apaixonada que compartilha reviews, teorias e discussões sobre seus animes favoritos.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Conteúdo Premium</h3>
+                    <p>Acesso aos melhores animes, desde clássicos atemporais até os lançamentos mais recentes da temporada atual.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Alcance Global</h3>
+                    <p>Conectando fãs de anime ao redor do mundo, promovendo a cultura japonesa e suas histórias incríveis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Animes Section -->
+    <section id="animes" class="animes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Animes<br>
+                    <span class="gradient-text">Mais Populares</span>
+                </h2>
+                <p class="section-subtitle">
+                    Descubra os animes mais assistidos e aclamados pela nossa comunidade. 
+                    Desde clássicos atemporais até os sucessos mais recentes.
+                </p>
+            </div>
+            
+            <div class="anime-grid">
+                <div class="anime-card">
+                    <div class="anime-image">
+                        <img src="https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=2" alt="Attack on Titan">
+                        <div class="anime-rating">⭐ 9.8</div>
+                        <div class="anime-overlay">
+                            <button class="play-btn">▶️</button>
+                        </div>
+                    </div>
+                    <div class="anime-content">
+                        <div class="anime-meta">
+                            <span class="anime-genre">Ação, Drama</span>
+                            <span class="anime-year">2013</span>
+                        </div>
+                        <h3 class="anime-title">Attack on Titan</h3>
+                        <p class="anime-description">A humanidade luta pela sobrevivência contra titãs colossais em uma batalha épica pelo futuro.</p>
+                        <div class="anime-footer">
+                            <span class="anime-episodes">75 episódios</span>
+                            <button class="btn-watch">Assistir</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="anime-card">
+                    <div class="anime-image">
+                        <img src="https://images.pexels.com/photos/8349226/pexels-photo-8349226.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=2" alt="Demon Slayer">
+                        <div class="anime-rating">⭐ 9.5</div>
+                        <div class="anime-overlay">
+                            <button class="play-btn">▶️</button>
+                        </div>
+                    </div>
+                    <div class="anime-content">
+                        <div class="anime-meta">
+                            <span class="anime-genre">Ação, Sobrenatural</span>
+                            <span class="anime-year">2019</span>
+                        </div>
+                        <h3 class="anime-title">Demon Slayer</h3>
+                        <p class="anime-description">Tanjiro embarca em uma jornada para salvar sua irmã e derrotar os demônios que ameaçam a humanidade.</p>
+                        <div class="anime-footer">
+                            <span class="anime-episodes">44 episódios</span>
+                            <button class="btn-watch">Assistir</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="anime-card">
+                    <div class="anime-image">
+                        <img src="https://images.pexels.com/photos/7148400/pexels-photo-7148400.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=2" alt="Your Name">
+                        <div class="anime-rating">⭐ 9.7</div>
+                        <div class="anime-overlay">
+                            <button class="play-btn">▶️</button>
+                        </div>
+                    </div>
+                    <div class="anime-content">
+                        <div class="anime-meta">
+                            <span class="anime-genre">Romance, Drama</span>
+                            <span class="anime-year">2016</span>
+                        </div>
+                        <h3 class="anime-title">Your Name</h3>
+                        <p class="anime-description">Uma história tocante sobre dois jovens conectados por um fenômeno misterioso e sobrenatural.</p>
+                        <div class="anime-footer">
+                            <span class="anime-episodes">1 filme</span>
+                            <button class="btn-watch">Assistir</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="anime-card">
+                    <div class="anime-image">
+                        <img src="https://images.pexels.com/photos/8499472/pexels-photo-8499472.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=2" alt="One Piece">
+                        <div class="anime-rating">⭐ 9.6</div>
+                        <div class="anime-overlay">
+                            <button class="play-btn">▶️</button>
+                        </div>
+                    </div>
+                    <div class="anime-content">
+                        <div class="anime-meta">
+                            <span class="anime-genre">Aventura, Comédia</span>
+                            <span class="anime-year">1999</span>
+                        </div>
+                        <h3 class="anime-title">One Piece</h3>
+                        <p class="anime-description">Luffy e sua tripulação navegam pelos mares em busca do tesouro lendário One Piece.</p>
+                        <div class="anime-footer">
+                            <span class="anime-episodes">1000+ episódios</span>
+                            <button class="btn-watch">Assistir</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="anime-card">
+                    <div class="anime-image">
+                        <img src="https://images.pexels.com/photos/10641541/pexels-photo-10641541.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=2" alt="Studio Ghibli">
+                        <div class="anime-rating">⭐ 9.4</div>
+                        <div class="anime-overlay">
+                            <button class="play-btn">▶️</button>
+                        </div>
+                    </div>
+                    <div class="anime-content">
+                        <div class="anime-meta">
+                            <span class="anime-genre">Fantasia, Família</span>
+                            <span class="anime-year">1986</span>
+                        </div>
+                        <h3 class="anime-title">Studio Ghibli Collection</h3>
+                        <p class="anime-description">Obras-primas atemporais que encantam gerações com magia, natureza e narrativas profundas.</p>
+                        <div class="anime-footer">
+                            <span class="anime-episodes">22 filmes</span>
+                            <button class="btn-watch">Assistir</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="anime-card">
+                    <div class="anime-image">
+                        <img src="https://images.pexels.com/photos/4164525/pexels-photo-4164525.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=2" alt="Naruto">
+                        <div class="anime-rating">⭐ 9.3</div>
+                        <div class="anime-overlay">
+                            <button class="play-btn">▶️</button>
+                        </div>
+                    </div>
+                    <div class="anime-content">
+                        <div class="anime-meta">
+                            <span class="anime-genre">Ação, Aventura</span>
+                            <span class="anime-year">2002</span>
+                        </div>
+                        <h3 class="anime-title">Naruto Saga</h3>
+                        <p class="anime-description">A jornada de um jovem ninja determinado a se tornar Hokage e proteger sua vila.</p>
+                        <div class="anime-footer">
+                            <span class="anime-episodes">720 episódios</span>
+                            <button class="btn-watch">Assistir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="noticias" class="news">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Últimas<br>
+                    <span class="gradient-text">Notícias</span>
+                </h2>
+                <p class="section-subtitle">
+                    Fique por dentro das novidades mais quentes do mundo dos animes.
+                </p>
+            </div>
+            
+            <div class="news-grid">
+                <article class="news-card featured">
+                    <div class="news-image">
+                        <img src="https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2" alt="Attack on Titan">
+                        <div class="news-category">Destaque</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">📅 15 Jan 2024</span>
+                            <span class="news-author">👤 Redação AnimeHub</span>
+                        </div>
+                        <h3 class="news-title">Nova Temporada de Attack on Titan Confirmada</h3>
+                        <p class="news-excerpt">O estúdio WIT anuncia oficialmente a produção da temporada final com data prevista para 2024.</p>
+                        <a href="#" class="news-link">Ler Mais →</a>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://images.pexels.com/photos/10641541/pexels-photo-10641541.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=2" alt="Studio Ghibli">
+                        <div class="news-category">Lançamentos</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">📅 12 Jan 2024</span>
+                        </div>
+                        <h3 class="news-title">Studio Ghibli Anuncia Novo Filme</h3>
+                        <p class="news-excerpt">Miyazaki retorna com uma nova obra que promete emocionar mais uma geração de fãs.</p>
+                        <a href="#" class="news-link">Ler Mais →</a>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://images.pexels.com/photos/8349226/pexels-photo-8349226.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=2" alt="Demon Slayer">
+                        <div class="news-category">Records</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">📅 10 Jan 2024</span>
+                        </div>
+                        <h3 class="news-title">Demon Slayer Quebra Recordes</h3>
+                        <p class="news-excerpt">O filme arrecada mais de 500 milhões de dólares mundialmente, tornando-se um fenômeno global.</p>
+                        <a href="#" class="news-link">Ler Mais →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <div class="logo">🎬</div>
+                        <span class="brand-name">AnimeHub</span>
+                    </div>
+                    <p class="footer-description">
+                        Sua plataforma definitiva para descobrir, assistir e compartilhar 
+                        o melhor do mundo dos animes japoneses.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">📺</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Navegação</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#animes">Catálogo</a></li>
+                        <li><a href="#noticias">Notícias</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Gêneros</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Ação & Aventura</a></li>
+                        <li><a href="#">Romance & Drama</a></li>
+                        <li><a href="#">Fantasia & Magia</a></li>
+                        <li><a href="#">Slice of Life</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Contato</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <p class="contact-label">Email</p>
+                                <p class="contact-value">contato@animehub.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <p class="contact-label">Telefone</p>
+                                <p class="contact-value">+55 11 9999-8888</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <p class="contact-label">Endereço</p>
+                                <p class="contact-value">São Paulo, SP<br>Brasil</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>© 2024 AnimeHub. Todos os direitos reservados.</p>
+                    <div class="footer-love">
+                        <span>Feito com ❤️ para os fãs de anime</span>
+                    </div>
+                    <div class="footer-legal">
+                        <a href="#">Política de Privacidade</a>
+                        <a href="#">Termos de Uso</a>
+                        <a href="#">Suporte</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
