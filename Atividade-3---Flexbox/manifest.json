@@ -1,0 +1,21 @@
+{
+  "name": "AnimeHub - O Mundo dos Animes",
+  "short_name": "AnimeHub",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#1E40AF",
+  "theme_color": "#1E40AF",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "assets/logo_site.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/logo_site.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

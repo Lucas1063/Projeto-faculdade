@@ -1,11 +1,11 @@
-// Menu Toggle para Mobile
+
 function toggleMenu() {
     const nav = document.querySelector('.nav');
     const menuToggle = document.querySelector('.menu-toggle');
     
     nav.classList.toggle('mobile-open');
     
-    // Muda o ícone do menu
+    
     if (nav.classList.contains('mobile-open')) {
         menuToggle.textContent = '✕';
     } else {
@@ -13,7 +13,6 @@ function toggleMenu() {
     }
 }
 
-// Smooth Scrolling para links de navegação
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
     
@@ -33,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     behavior: 'smooth'
                 });
                 
-                // Fecha o menu mobile se estiver aberto
+              
                 const nav = document.querySelector('.nav');
                 const menuToggle = document.querySelector('.menu-toggle');
                 if (nav.classList.contains('mobile-open')) {
@@ -45,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Header transparente/sólido baseado no scroll
+
 window.addEventListener('scroll', function() {
     const header = document.querySelector('.header');
     
@@ -58,7 +57,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Animação de entrada dos cards quando entram na viewport
+
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -73,7 +72,7 @@ const observer = new IntersectionObserver(function(entries) {
     });
 }, observerOptions);
 
-// Observa todos os cards para animação
+
 document.addEventListener('DOMContentLoaded', function() {
     const cards = document.querySelectorAll('.anime-card, .feature-card, .news-card');
     
@@ -85,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// PWA Service Worker Registration
+
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
         navigator.serviceWorker.register('/sw.js')
