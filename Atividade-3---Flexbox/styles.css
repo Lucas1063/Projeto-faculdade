@@ -1,4 +1,4 @@
-/* Reset e Base */
+
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +18,6 @@ body {
     padding: 0 20px;
 }
 
-/* Header */
 .header {
     position: fixed;
     top: 0;
@@ -115,7 +114,6 @@ body {
     color: #374151;
 }
 
-/* Hero Section */
 .hero {
     min-height: 100vh;
     background: linear-gradient(135deg, rgba(30, 64, 175, 0.9), rgba(124, 58, 237, 0.9)), 
@@ -147,7 +145,7 @@ body {
 @keyframes float {
     0% { transform: translate(-50%, -50%) rotate(0deg); }
     100% { transform: translate(-50%, -50%) rotate(360deg); }
-}
+}   
 
 .hero-content {
     max-width: 800px;
@@ -257,7 +255,6 @@ body {
     transform: translateY(-3px);
 }
 
-/* Sections */
 .about, .animes, .news {
     padding: 5rem 0;
 }
@@ -294,21 +291,16 @@ body {
     margin: 0 auto;
 }
 
-/* Features Grid */
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+.features-flex {
+    display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
-    margin-bottom: 3rem;
+    justify-content: center;
 }
 
 .feature-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    border: 1px solid #E5E7EB;
+    flex: 1 1 250px;
+    max-width: 350px;
 }
 
 .feature-card:hover {
@@ -334,20 +326,17 @@ body {
     line-height: 1.6;
 }
 
-/* Anime Grid */
-.anime-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+.anime-flex {
+    display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
+    justify-content: center;
 }
 
 .anime-card {
-    background: white;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    border: 1px solid #E5E7EB;
+    flex: 1 1 300px;
+    max-width: 350px;
 }
 
 .anime-card:hover {
@@ -476,20 +465,17 @@ body {
     box-shadow: 0 5px 15px rgba(30, 64, 175, 0.3);
 }
 
-/* News Section */
-.news-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+.news-flex {
+    display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
+    justify-content: center;
 }
 
 .news-card {
-    background: white;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    border: 1px solid #E5E7EB;
+    flex: 1 1 300px;
+    max-width: 400px;
 }
 
 .news-card:hover {
@@ -498,8 +484,9 @@ body {
 }
 
 .news-card.featured {
-    grid-column: 1 / -1;
+    flex: 1 1 100%;
 }
+
 
 .news-image {
     position: relative;
@@ -576,17 +563,17 @@ body {
     color: #7C3AED;
 }
 
-/* Footer */
+
 .footer {
     background: #111827;
     color: white;
 }
 
 .footer-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 3rem;
-    padding: 3rem 0;
+    justify-content: center;
 }
 
 .footer-brand {
@@ -756,24 +743,7 @@ body {
         max-width: 250px;
         justify-content: center;
     }
-    
-    .features-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .anime-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .news-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .footer-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    
+     
     .footer-bottom-content {
         flex-direction: column;
         text-align: center;
@@ -798,9 +768,6 @@ body {
         gap: 1rem;
     }
     
-    .anime-grid {
-        grid-template-columns: 1fr;
-    }
     
     .anime-card {
         margin: 0 auto;

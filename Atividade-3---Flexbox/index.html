@@ -83,7 +83,7 @@
                 </p>
             </div>
             
-            <div class="features-grid">
+            <div class="features-flex">
                 <div class="feature-card">
                     <div class="feature-icon">❤️</div>
                     <h3>Paixão pelo Anime</h3>
@@ -125,7 +125,7 @@
                 </p>
             </div>
             
-            <div class="anime-grid">
+            <div class="anime-flex">
                 <div class="anime-card">
                     <div class="anime-image">
                         <img src="../Atividade-3---Flexbox/assets/Attack_on_Titan_Season_1.webp" alt="Attack on Titan">
@@ -274,7 +274,7 @@
                 </p>
             </div>
             
-            <div class="news-grid">
+            <div class="news-flex">
                 <article class="news-card featured">
                     <div class="news-image">
                         <img src="../Atividade-3---Flexbox/assets/aot_filme.jpg" alt="Attack on Titan">
@@ -413,9 +413,13 @@
     <script>
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
-        navigator.serviceWorker.register('./sw.js')
-            .then(reg => console.log('ServiceWorker registrado', reg))
-            .catch(err => console.error('Falha no registro', err));
+        navigator.serviceWorker.register('sw.js')
+            .then(function(registration) {
+                console.log('ServiceWorker registration successful');
+            })
+            .catch(function(err) {
+                console.log('ServiceWorker registration failed: ', err);
+            });
     });
 }
 
